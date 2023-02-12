@@ -45,8 +45,8 @@ void xexdivider(const char *fn, const char *name)
 	};
 	
 	// Read XEX
-    pf=fopen(fn,"rb");
-    if (pf)
+	pf=fopen(fn,"rb");
+	if (pf)
     {
 		fseek(pf,0,SEEK_END);
 		size=ftell(pf);
@@ -231,7 +231,6 @@ int main(int argc, char *argv[])
 		default:
 		{
 			printf("use:\n");
-			printf("   xexdiv file.xex\n");	
 			printf("   xexdiv file.xex NAME\n");	
 		} break;
 	};
